@@ -1,0 +1,43 @@
+@import "_variables";
+@import "_mixins";
+
+
+.noticias-container{
+    width:700px;
+    margin: 0 auto;
+    display:flex;
+}
+
+.coluna-esquerda {
+    width: 400px;
+    padding: 25px 50px 25px 25px;
+    background-color: $backgroundSidebar;
+    @include border;
+
+    a{
+        text-decoration:none;
+        color: $linkLeftSidebar;
+    }
+
+    ul{
+        padding: 0;
+        margin: 0;
+        padding-bottom: 15px;
+    }
+
+}
+
+.espacamento{
+    height: 500px;
+}
+
+.coluna-direita{
+    padding: 0 25px;
+    background-color: $backgroundContent;
+    @include border;
+    a{
+        color: $linkRightcontent;
+        text-decoration:none;
+    }
+    
+}
